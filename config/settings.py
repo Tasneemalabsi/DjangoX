@@ -33,8 +33,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
-    'movies',
-    'snacks',
+    'films',
 ]
 
 # MIDDLEWARE

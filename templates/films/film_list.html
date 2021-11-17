@@ -1,0 +1,18 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+
+{% block content %}
+<h2>Click on the movie to see the details</h2>
+{% for film in object_list %}
+<div>
+
+<h3>
+  <a href="{% url 'film_detail' film.pk %}">{{film.title}}</a>
+
+</h3>
+</div>
+{% endfor %}
+<h3>
+<a href="{%url 'film_create'%}">*********add your own movie*********</a>
+</h3>
+{% endblock %}
+

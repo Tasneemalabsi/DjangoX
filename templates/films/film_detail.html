@@ -1,0 +1,16 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+
+{% block content %}
+<div>
+    <h2>
+  <a href="{%url 'film_list'%}">Movie list</a></h2>
+  <h2>Details about {{film.title}}</h2>
+  <p>Title: {{film.title}}</p>
+  <p>Description: {{film.description }}</p>
+  <p>User: {{film.user}}</p>
+  <p>Rating: {{film.rating}}</p>
+  <a href="{% url 'film_update' film.pk %}">+ Update movie</a>
+  <a href="{% url 'film_delete' film.pk %}">+ Delete movie</a>
+</div>
+
+{% endblock %}
