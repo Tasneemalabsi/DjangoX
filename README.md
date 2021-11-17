@@ -105,7 +105,8 @@ Give a ⭐️  if this project helped you!
 
 [The MIT License](LICENSE)
 
-
+## Pull Request Link
+[PR-link](https://github.com/Tasneemalabsi/DjangoX/pull/1)
 <!-- ## Docker Usage
 ```
 # Build the Docker Image

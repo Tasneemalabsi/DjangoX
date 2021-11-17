@@ -1,0 +1,12 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<h1>Add Your Movie</h1>
+
+<form method="post" class="uniForm">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <input type="submit" value="SAVE">
+</form>
+{% endblock content %}

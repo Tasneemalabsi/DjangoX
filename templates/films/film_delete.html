@@ -1,0 +1,11 @@
+{% comment %} {% extends '_base.html' %} {% endcomment %}
+
+{% block content %}
+<h1>Delete Movie</h1>
+
+<form method="post" class="uniForm">
+  {% csrf_token %}
+  <p>Do you really want to delete "{{ film.title }}"?</p>
+  <input type="submit" value="OK">
+</form>
+{% endblock content %}
